@@ -28,6 +28,7 @@ const MainContent = ()=>{
 
 
     useEffect(()=>{
+        if(keyword === ''){
             fetch(`${URL}/photos`, {
                 headers:{
                     Authorization : `Client-ID s10j5eZNtp2NrdTQH6vV8bXkQjk_UdAOq5QjiJpN6-8`,
@@ -36,7 +37,8 @@ const MainContent = ()=>{
             })
             .then(response => response.json())
             .then(data => setSearchName(data));
-    }, [])
+        }
+    }, [keyword])
     return(
         <div className="col-md-10 col-sm-12 main_content">
         <TopMenu searchImage={searchImage} findImage={findImage}/>
