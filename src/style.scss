@@ -1,0 +1,139 @@
+$backgroundColor: #FAFAFC;
+$borderColor: rgb(233, 228, 228);
+$color: #858587;
+
+
+.navMenu{
+    background: $backgroundColor;
+    border-right: 0.5px solid $borderColor;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.logo_div{
+    padding-left: 30px;
+}
+.logo_text{
+    font-weight: bold;
+    color: #3C3399;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.nav_UL{
+    list-style-type: none;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+.nav_UL li{
+    font-size: 12px;
+    padding: 10px;
+}
+
+.nav_UL li:hover{
+    cursor: pointer;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ .nav_active{
+    cursor: pointer;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+ }
+
+ .main_content{
+     background: $backgroundColor;
+     padding: 30px;
+ }
+
+ .top_menu{
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+
+ .search_box{
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     background-color: white;
+     width: 70%;
+     height: 60px;
+     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+     padding-left: 20px;
+     color: $color;
+ }
+.person{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+     width: 30%;
+     height: 60px;
+     color:  #3A319E;
+}
+
+.menu_input{
+    border: none;
+    width: 75%;
+    margin-left: 20px;
+    padding: 10px;
+    outline: none;
+}
+
+.menu_butt{
+border: none;
+padding: 10px 35px 10px 35px;
+background-color: #3A319E;
+color: white;
+border-radius: 5px;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+    padding-left: 10px;
+}
+
+.menu_drop{
+    background-color: transparent !important;
+    color: black !important;
+    outline: none;
+    height: 60px;
+    border-right: 1px solid $borderColor !important;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .menu_drop:hover{
+    color: black !important;
+    border: none !important;
+  }
+
+  .content_div{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 30px;
+      align-content: flex-start;
+  }
+
+  .image_wrap{
+      width: 23%;
+      height: 350px;
+      background-color: green;
+      margin-top: 30px;
+      border-radius: 5px;
+  }
