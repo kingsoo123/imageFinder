@@ -132,8 +132,43 @@ border-radius: 5px;
 
   .image_wrap{
       width: 23%;
-      height: 350px;
-      background-color: green;
       margin-top: 30px;
-      border-radius: 5px;
+  }
+
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.1);
+ }
+
+  .middle{
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+  }
+
+  .image_wrap:hover .image {
+    opacity: 0.3;
+  }
+  
+  .image_wrap:hover .middle {
+    opacity: 1;
+  }
+
+  .text{
+    background-color: #ffffff;
+    color: rgb(26, 25, 25);
+    font-size: 16px;
+    height: 100px;
+    padding-top: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 1;
+    margin-top: -3px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 7px 0 rgba(0, 0, 0, 0.1);
   }
